@@ -4,6 +4,163 @@ html {
   font-family: sans-serif;
 }
 
+/* custom code */
+
+
+/*--------------------------
+* MENU TABS
+---------------------------*/
+.menu__tabs {
+  padding-left: 0;
+	list-style: none;
+	overflow: hidden;
+  display: flex;
+  gap: 5px;
+}
+.menu__tabs li {
+	float: left;
+	margin-right: 2px;
+	font-size: 13px;
+}
+
+
+.menu__tabs a {
+  border: #e7caca 1px solid;
+	padding: 5px;
+	background: #0065C8;
+	display: inline-block;
+	color: #FFF;
+	text-decoration: none;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 15px;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	-webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: inset 0 -2px 5px rgba(0,0,0,0.2);
+}
+.menu__tabs a:hover {
+	background-color: #0065C8;
+}
+.menu__tabs a.active {
+	color: #333b48;
+	background: #FFF;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.menu__tabs a.active i {color: #80cbb7;}
+.menu__tabs a i {
+	margin-right: 3px;
+	color: #aaaaaa;
+}
+
+/*--------------------------
+* MENU WRAPPER
+---------------------------*/
+.menu {
+	margin: 55px auto;
+	width: 80%;
+	max-width: 600px;
+	position: relative;
+}
+.menu__wrapper {
+	/* padding: 2em; */
+  overflow-y: hidden;
+	position: relative;
+	z-index: 400;
+	background: #FFF;
+	min-height: 300px;
+	-webkit-border-radius: 0 4px 4px 4px;
+	-moz-border-radius: 0 4px 4px 4px;
+	border-radius: 0 4px 4px 4px;
+}
+.menu--shadow {
+	position: absolute;
+	z-index: 300;
+	bottom: -5px;
+	height: 25px;
+	width: 100%;
+}
+.menu--shadow:after,
+.menu--shadow:before {
+	content: '';
+	display: block;
+	width: 50%;
+	height: 25px;
+	position: absolute;
+	left: 0;
+	background: rgba(0,0,0,0.2);
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	-webkit-box-shadow: 0 0 15px 5px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0 0 15px 5px rgba(0,0,0,0.25);
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.25);
+	-webkit-transform: scale(0.8) rotate(-4deg);
+	-ms-transform: scale(0.8) rotate(-4deg);
+	-o-transform: scale(0.8) rotate(-4deg);
+	transform: scale(0.8) rotate(-4deg);
+}
+.menu--shadow:after {
+	right: 0;
+	left: auto;
+	-webkit-transform: scale(0.8) rotate(4deg);
+	-ms-transform: scale(0.8) rotate(4deg);
+	-o-transform: scale(0.8) rotate(4deg);
+	transform: scale(0.8) rotate(4deg);
+}
+.menu__wrapper .menu__item {
+	line-height: 1.3;
+	color: #76716f;
+	display: none;
+}
+.menu__wrapper .menu__item .inputs{
+  display: grid;
+  gap: 7px;
+  margin-bottom: 10px;
+  height: 280px;
+  overflow-y: auto;
+
+}
+.menu__wrapper .menu__item .inputs input{
+  padding: 10px;
+  border-radius: 5px;
+  border: #e4ebf3 solid 0.5px;
+}
+/* .menu__wrapper .menu__item.item-active {
+	display: block;
+} */
+.menu__wrapper .menu__item h2 {
+  font-size: 16px;
+}
+
+.menu__wrapper .menu__item h3 {
+	font-size: 1.8em;
+	color: #333b48;
+	border-bottom: 1px solid #d9d9d9;
+	padding-bottom: 5px;
+	margin-bottom: 12px;
+}
+.menu__wrapper .menu__item p {
+	font-size: 1.3em;
+	line-height: 1.6em;
+	color: #76716f;
+}
+
+
+
+
+#form-container .step {
+  display: none;
+}
+
+
+
+
+/* custome code end */
+
 body {
   margin: 0;
 }
@@ -5479,6 +5636,7 @@ textarea.w-input, textarea.w-select {
   bottom: 0%;
   left: 0%;
   right: 0%;
+  padding: 5px;
 }
 
 .div-block-5 {
@@ -5716,10 +5874,9 @@ textarea.w-input, textarea.w-select {
 }
 
 .spark-button-3 {
-  border: 1px solid var(--spark-library--foreground-interactive);
   background-color: var(--spark-library--foreground-interactive);
   color: var(--spark-library--white);
-  border-radius: 8px;
+  border-radius: 30px;
   flex: none;
   padding: 16px;
   font-size: .9375rem;
@@ -5736,13 +5893,13 @@ textarea.w-input, textarea.w-select {
 }
 
 .spark-button-3.spark-full-width {
-  background-color: var(--spark-library--foreground-interactive);
+  background-color: #0065C8;
   text-align: center;
   width: 100%;
 }
 
 .spark-button-3.spark-full-width:hover {
-  background-color: var(--spark-library--foreground-interactive-hover);
+  background-color: #01BE62;
 }
 
 .spark-checkbox-2 {
@@ -6027,7 +6184,7 @@ textarea.w-input, textarea.w-select {
 .spark-centered-form-3 {
   background-color: var(--spark-library--white);
   border-radius: 12px;
-  width: 388px;
+  width: 400px;
   max-width: 100%;
   margin-bottom: 0;
   margin-left: auto;

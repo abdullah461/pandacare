@@ -89,7 +89,7 @@
                     href="#"
                     data-w-id="89c476f6-a00d-ae24-90e1-138c54b50aff"
                     class="button-primary-2 w-button"
-                    >Sign in</a
+                    >Sign up</a
                   >
                 </li>
               </ul>
@@ -107,86 +107,211 @@
           <img
             src="images/close.png"
             loading="lazy"
-            data-w-id="20f41e56-4bfd-d3c0-3c89-d506c5879f97"
+            data-w-id="1782ea73-42aa-c003-c223-5ba262cba1d3"
             alt=""
             class="image-9"
           />
-          <div class="spark-form-heading-3">Sign up</div>
-          <form
-            id="wf-form-Sign-up-form"
-            name="wf-form-Sign-up-form"
-            data-name="Sign up form"
-            method="get"
-            data-wf-page-id="648ea27031dfd0f345a3f9e7"
-            data-wf-element-id="20f41e56-4bfd-d3c0-3c89-d506c5879f9a"
-          >
-            <label for="Your-Name---Signup-Form-2" class="field-label-3"
-              >Name</label
-            ><input
-              class="spark-input-3 w-input"
-              autofocus="true"
-              maxlength="256"
-              name="Your-Name---Signup-Form-2"
-              data-name="Your Name Signup Form 2"
-              placeholder="Enter Your Name"
-              type="text"
-              id="Your-Name---Signup-Form-2"
-            /><label for="Email-Address-Sign-up-form-3" class="field-label"
-              >Email Address</label
-            ><input
-              class="spark-input-3 w-input"
-              maxlength="256"
-              name="Email-Address-Sign-up-form-3"
-              data-name="Email Address Sign Up Form 3"
-              placeholder="Your Email Address"
-              type="email"
-              id="Email-Address-Sign-up-form-3"
-              required=""
-            /><label for="Password-Sign-up-form-2" class="field-label-2"
-              >Password</label
-            ><input
-              class="spark-input-3 w-input"
-              maxlength="256"
-              name="Password-Sign-up-form-2"
-              data-name="Password Sign Up Form 2"
-              placeholder=""
-              type="password"
-              id="Password-Sign-up-form-2"
-              required=""
-            /><label
-              id="Consent-Check-Sign-up-form"
-              class="w-checkbox spark-checkbox-parent-3"
-              ><div
-                class="w-checkbox-input w-checkbox-input--inputType-custom spark-checkbox-3"
-              ></div>
-              <input
-                id="Consent-Check-Sign-up-form-2"
-                type="checkbox"
-                name="Consent-Check-Sign-up-form-2"
-                data-name="Consent Check Sign Up Form 2"
-                style="opacity: 0; position: absolute; z-index: -1"
-              /><span
-                class="checkbox-label-2 w-form-label"
-                for="Consent-Check-Sign-up-form-2"
-                >I agree to this website&#x27;s
-                <a href="#" class="spark-text-link-3">Privacy Policy</a> and
-                <a href="#" class="spark-text-link-3">Terms of Service</a
-                >.</span
-              ></label
-            ><input
-              type="submit"
-              data-wait="Please wait..."
-              class="spark-button-4 spark-full-width w-button"
-              value="Submit"
-            />
-            <div class="spark-form-sub-text-3">
-              Already have an account?
-              <a href="#" class="spark-text-link-3 spark-gray">Login</a>
+          <div class="form-heading">
+            <h1 style="color: #0065c8">Register Now!</h1>
+            <p>Select your category below</p>
+          </div>
+          <form>
+            <div id="form-container">
+              <ul class="menu__tabs">
+                <li><a class="active" href="#item-1">Doctor</a></li>
+                <li><a href="#item-2">Nurse</a></li>
+                <li><a href="#item-3">Home-Keeper</a></li>
+                <li><a href="#item-4">Patient</a></li>
+              </ul>
+
+              <section class="menu__wrapper">
+                <div id="item-1" class="menu__item item-active">
+                  <h2>Doctor Information</h2>
+                  <div class="inputs">
+                    <input type="text" placeholder="Full Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="text" placeholder="Current Address" />
+                    <input type="text" placeholder="Folio Number" />
+                    <input
+                      style="padding: 20px"
+                      type="date"
+                      placeholder="Date of Birth"
+                    />
+                    <input type="text" placeholder="Marital Status" />
+                    <input type="text" placeholder="Years of Experience" />
+                    <input type="text" placeholder="Current Workplace" />
+                    <label
+                      id="Consent-Check-Sign-up-form"
+                      class="w-checkbox spark-checkbox-parent-2"
+                      ><div
+                        class="w-checkbox-input w-checkbox-input--inputType-custom spark-checkbox-2"
+                      ></div>
+                      <input
+                        id="Consent-Check-Sign-up-form-2"
+                        type="checkbox"
+                        name="Consent-Check-Sign-up-form-2"
+                        data-name="Consent Check Sign Up Form 2"
+                        style="opacity: 0; position: absolute; z-index: -1"
+                      /><span
+                        class="checkbox-label w-form-label"
+                        for="Consent-Check-Sign-up-form-2"
+                        >I agree to this website&#x27;s
+                        <a href="#" class="spark-text-link-2">Privacy Policy</a>
+                        and
+                        <a href="#" class="spark-text-link-2"
+                          >Terms of Service</a
+                        >.</span
+                      ></label
+                    >
+                  </div>
+                  <input
+                    type="submit"
+                    data-wait="Please wait..."
+                    class="spark-button-3 spark-full-width w-button"
+                    value="Submit"
+                  />
+                </div>
+
+                <div id="item-2" class="menu__item item-active">
+                  <h2>Nurse/Midwife Information</h2>
+                  <div class="inputs">
+                    <input type="text" placeholder="Full Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="text" placeholder="Current Address" />
+                    <input type="text" placeholder="RN/RM Number" />
+                    <input
+                      style="padding: 20px"
+                      type="date"
+                      placeholder="Date of Birth"
+                    />
+                    <input type="text" placeholder="Marital Status" />
+                    <input type="text" placeholder="Years of Experience" />
+                    <input type="text" placeholder="Current Workplace" />
+                    <label
+                      id="Consent-Check-Sign-up-form"
+                      class="w-checkbox spark-checkbox-parent-2"
+                      ><div
+                        class="w-checkbox-input w-checkbox-input--inputType-custom spark-checkbox-2"
+                      ></div>
+                      <input
+                        id="Consent-Check-Sign-up-form-2"
+                        type="checkbox"
+                        name="Consent-Check-Sign-up-form-2"
+                        data-name="Consent Check Sign Up Form 2"
+                        style="opacity: 0; position: absolute; z-index: -1"
+                      /><span
+                        class="checkbox-label w-form-label"
+                        for="Consent-Check-Sign-up-form-2"
+                        >I agree to this website&#x27;s
+                        <a href="#" class="spark-text-link-2">Privacy Policy</a>
+                        and
+                        <a href="#" class="spark-text-link-2"
+                          >Terms of Service</a
+                        >.</span
+                      ></label
+                    >
+                  </div>
+                  <input
+                    type="submit"
+                    data-wait="Please wait..."
+                    class="spark-button-3 spark-full-width w-button"
+                    value="Submit"
+                  />
+                </div>
+
+                <div id="item-3" class="menu__item item-active">
+                  <h2>Home-Keeper Information</h2>
+                  <div class="inputs">
+                    <input type="text" placeholder="Full Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="text" placeholder="Current Address" />
+                    <input type="text" placeholder="Nin Number" />
+                    <input
+                      style="padding: 20px"
+                      type="date"
+                      placeholder="Date of Birth"
+                    />
+                    <input type="text" placeholder="Marital Status" />
+                    <input type="text" placeholder="Years of Experience" />
+                    <input type="tel" placeholder="Phone Number" />
+                    <label
+                      id="Consent-Check-Sign-up-form"
+                      class="w-checkbox spark-checkbox-parent-2"
+                      ><div
+                        class="w-checkbox-input w-checkbox-input--inputType-custom spark-checkbox-2"
+                      ></div>
+                      <input
+                        id="Consent-Check-Sign-up-form-2"
+                        type="checkbox"
+                        name="Consent-Check-Sign-up-form-2"
+                        data-name="Consent Check Sign Up Form 2"
+                        style="opacity: 0; position: absolute; z-index: -1"
+                      /><span
+                        class="checkbox-label w-form-label"
+                        for="Consent-Check-Sign-up-form-2"
+                        >I agree to this website&#x27;s
+                        <a href="#" class="spark-text-link-2">Privacy Policy</a>
+                        and
+                        <a href="#" class="spark-text-link-2"
+                          >Terms of Service</a
+                        >.</span
+                      ></label
+                    >
+                  </div>
+                  <input
+                    type="submit"
+                    data-wait="Please wait..."
+                    class="spark-button-3 spark-full-width w-button"
+                    value="Submit"
+                  />
+                </div>
+
+                <div id="item-4" class="menu__item item-active">
+                  <h2>Patient Information</h2>
+
+                  <div class="inputs">
+                    <input type="text" placeholder="Full Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="text" placeholder="Current Address" />
+                    <input type="tel" placeholder="Phone Number" />
+                    <label
+                      id="Consent-Check-Sign-up-form"
+                      class="w-checkbox spark-checkbox-parent-2"
+                      ><div
+                        class="w-checkbox-input w-checkbox-input--inputType-custom spark-checkbox-2"
+                      ></div>
+                      <input
+                        id="Consent-Check-Sign-up-form-2"
+                        type="checkbox"
+                        name="Consent-Check-Sign-up-form-2"
+                        data-name="Consent Check Sign Up Form 2"
+                        style="opacity: 0; position: absolute; z-index: -1"
+                      /><span
+                        class="checkbox-label w-form-label"
+                        for="Consent-Check-Sign-up-form-2"
+                        >I agree to this website&#x27;s
+                        <a href="#" class="spark-text-link-2">Privacy Policy</a>
+                        and
+                        <a href="#" class="spark-text-link-2"
+                          >Terms of Service</a
+                        >.</span
+                      ></label
+                    >
+                  </div>
+                  <input
+                    type="submit"
+                    data-wait="Please wait..."
+                    class="spark-button-3 spark-full-width w-button"
+                    value="Submit"
+                  />
+                </div>
+              </section>
             </div>
           </form>
-          <div class="spark-form-success-3 w-form-done">
+
+          <!-- <div class="spark-form-success-3 w-form-done">
             <div>Thank you! Your submission has been received!</div>
-          </div>
+          </div> -->
           <div class="w-form-fail">
             <div>Oops! Something went wrong while submitting the form.</div>
           </div>
@@ -1027,3 +1152,75 @@
     <script src="js/webflow-script.js" type="text/javascript"></script>
   </body>
 </html>
+<!-- <form
+            id="wf-form-Sign-up-form"
+            name="wf-form-Sign-up-form"
+            data-name="Sign up form"
+            method="get"
+            data-wf-page-id="648d9b1fe26cd07c0c807f0c"
+            data-wf-element-id="5275d21a-d5ab-880e-6010-77e52813eb5e"
+          >
+            <label for="Your-Name---Signup-Form" class="field-label-3"
+              >Name</label
+            ><input
+              class="spark-input-3 w-input"
+              autofocus="true"
+              maxlength="256"
+              name="Your-Name---Signup-Form"
+              data-name="Your Name - Signup Form"
+              placeholder="Enter Your Name"
+              type="text"
+              id="Your-Name---Signup-Form"
+            /><label for="Email-Address-Sign-up-form-2" class="field-label"
+              >Email Address</label
+            ><input
+              class="spark-input-3 w-input"
+              maxlength="256"
+              name="Email-Address-Sign-up-form"
+              data-name="Email Address Sign up form"
+              placeholder="Your Email Address"
+              type="email"
+              id="Email-Address-Sign-up-form-2"
+              required=""
+            /><label for="Password-Sign-up-form" class="field-label-2"
+              >Password</label
+            ><input
+              class="spark-input-3 w-input"
+              maxlength="256"
+              name="Password-Sign-up-form"
+              data-name="Password Sign up form"
+              placeholder=""
+              type="password"
+              id="Password-Sign-up-form"
+              required=""
+            /><label
+              id="Consent-Check-Sign-up-form"
+              class="w-checkbox spark-checkbox-parent-3"
+              ><div
+                class="w-checkbox-input w-checkbox-input--inputType-custom spark-checkbox-3"
+              ></div>
+              <input
+                id="Consent-Check-Sign-up-form"
+                type="checkbox"
+                name="Consent-Check-Sign-up-form"
+                data-name="Consent Check Sign up form"
+                style="opacity: 0; position: absolute; z-index: -1"
+              /><span
+                class="checkbox-label-2 w-form-label"
+                for="Consent-Check-Sign-up-form"
+                >I agree to this website&#x27;s
+                <a href="#" class="spark-text-link-3">Privacy Policy</a> and
+                <a href="#" class="spark-text-link-3">Terms of Service</a
+                >.</span
+              ></label
+            ><input
+              type="submit"
+              data-wait="Please wait..."
+              class="spark-button-4 spark-full-width w-button"
+              value="Submit"
+            />
+            <div class="spark-form-sub-text-3">
+              Already have an account?
+              <a href="#" class="spark-text-link-3 spark-gray">Login</a>
+            </div>
+          </form> -->
